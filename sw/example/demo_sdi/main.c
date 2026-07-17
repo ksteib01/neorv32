@@ -26,6 +26,7 @@
 /**@}*/
 
 // Prototypes
+
 void sdi_put(void);
 void sdi_get(void);
 

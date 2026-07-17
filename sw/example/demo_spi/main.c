@@ -29,6 +29,7 @@
 uint32_t spi_configured;
 
 // Prototypes
+
 void spi_cs(uint32_t type);
 void spi_transfer(void);
 void spi_setup(void);
@@ -218,8 +219,7 @@ void spi_setup(void) {
   uint32_t clock = neorv32_sysinfo_get_clk() / (2 * PRSC_LUT[spi_prsc] * (1 + clk_div));
   neorv32_uart0_printf("\n+ New SPI clock speed = %u Hz\n", clock);
 
-  // ---- SPI clock mode ----
-
+  // ---- SPI clock mode ---- 
   while (1) {
     neorv32_uart0_printf("Select SPI clock mode (0..3): ");
     neorv32_uart0_scan(terminal_buffer, 2, 1);

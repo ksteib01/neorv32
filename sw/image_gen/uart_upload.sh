@@ -31,7 +31,7 @@ printf "OK\n"
 
 # send executable
 printf "Uploading executable ($FILESIZE bytes)... "
-printf " u" >&3 # skip auto-boot (SPACE) and start upload ('u')
+printf "u" >&3 # skip auto-boot (SPACE) and start upload ('u')
 cat $2 >&3 # send executable
 
 # wait for upload to complete and check bootloader response
