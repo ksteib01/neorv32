@@ -84,7 +84,7 @@ void powerDown() {
 /**
  * Helper Function to transmit commands to the ADS1220
  * 
- * @param[in] cmd Command as defined in @enum[ADS_1220_COMMAND]
+ * @param[in] cmd Command as defined in ADS1220_COMMAND
  */
 void command(uint8_t cmd) {
     neorv32_spi_cs_en(0);

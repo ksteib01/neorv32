@@ -5,6 +5,9 @@
 
 //ADS1220 SPI commands
 
+/**
+    List of Byte Commands for the ADS1220
+*/
 typedef enum ADS1220_COMMAND {
     RESET       = 0x06,
     START       = 0x08,
